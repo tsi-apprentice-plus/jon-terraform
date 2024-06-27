@@ -66,7 +66,7 @@ services:
   backend:
     image: ghcr.io/tizzer1331/api:latest
     ports:
-      - "$backend_port:8000"
+      - "$backend_port:8080"
     container_name: backend
 EOL
 sudo docker compose --file /tmp/docker-compose.yml up -d
